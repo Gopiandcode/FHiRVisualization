@@ -59,6 +59,6 @@ else if (process.env.NODE_ENV == 'production') {
 
 
 
-app.listen(80, () => {
+app.listen(8080, () => {
     console.log("Express app listening on port " + 80);
 })
