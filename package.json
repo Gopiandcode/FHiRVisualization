@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.prod.js",
-    "development": "cross-env NODE_ENV=development nodemon ./index.js",
-    "production": "cross-env NODE_ENV=production nodemon ./index.js",
+    "development": "cross-env NODE_ENV=development nodemon ./backend/index.js",
+    "debug": "cross-env NODE_ENV=development nodemon --debug ./backend/index.js",
+    "production": "cross-env NODE_ENV=production nodemon ./backend/index.js",
     "test": "mocha"
   },
   "repository": {
@@ -21,7 +22,24 @@
   "author": "Gopiandcode (Kiran Gopinathan)",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.2"
+    "axios": "^0.17.1",
+    "bcryptjs": "^2.4.3",
+    "connect-mongo": "^2.0.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "method-override": "^2.3.10",
+    "moment": "^2.20.1",
+    "mongoose": "^4.13.4",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "prop-types": "^15.6.0",
+    "react-router": "3",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "url-loader": "^0.6.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -33,6 +51,7 @@
     "babel-preset-react-hmre": "^1.1.1",
     "cross-env": "^5.1.1",
     "css-loader": "^0.28.7",
+    "detect-node": "^2.0.3",
     "eslint": "^4.10.0",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-import": "^2.8.0",
@@ -47,9 +66,11 @@
     "react": "^16.0.0",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
     "react-test-renderer": "^16.0.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
+    "victory": "^0.24.2",
     "webpack": "^3.8.1",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-hot-middleware": "^2.20.0"

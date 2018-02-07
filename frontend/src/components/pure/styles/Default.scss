@@ -1,0 +1,16 @@
+#about-container {
+    width: 100%;
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#about-content {
+    align-self: center;
+    grid-row: 1;
+    grid-column: 2;
+    align-content: center;
+    text-align: center;
+}

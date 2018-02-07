@@ -1,0 +1,82 @@
+@import "variables";
+#navbar-root {
+    font-family: $baseFontFamily;
+    color: $headerTextColour;
+    background-color: $headerAccentColour;
+    overflow: hidden;
+    margin-bottom: 2em;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    height: 80px;
+}
+
+#navbar-logo {
+    width: 170px;
+    align-self: center;
+    margin: 10px;
+}
+
+#navbar-title {
+    align-self: center;
+    text-align: center
+}
+
+#navbar-buttons {
+    align-self: center;
+    //float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar-auth-button {
+    align-self: flex-end;
+    color: $headerAccentColour;
+    background-color: $headerTextColour;
+    border-radius: 50px;
+    width: 100px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-size: $bodyFontSize;
+}
+
+#navbar-options-container {
+    align-content: center;
+    justify-content: space-between;
+    align-items: stretch;
+    align-self: flex-end;
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+
+#navbar-options-container > ul {
+    list-style: none;
+}
+
+#navbar-options-container > ul > li {
+    display: inline;
+}
+
+#navbar-options-container > ul > li > a {
+    color: white;
+    font-size: $bodyFontSize;
+    //    padding: 14px 16px;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 16px;
+}
+
+#navbar-root a {
+    //    float: left;
+    //    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+#navbar-root a:hover {
+    background-color: #007e00;
+    color: white;
+}

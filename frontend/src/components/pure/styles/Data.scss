@@ -1,0 +1,118 @@
+@import "variables";
+
+#data-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 2fr 5fr;
+  grid-column-gap: 30px;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#data-date {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  margin-right: 20px;
+}
+
+#data-date > p {
+  float: right;
+}
+
+#data-title > h2 {
+  margin-left: 15px;
+  font-size: $titleFontSize;
+  font-weight: $thinFontWeight;
+}
+
+#data-title {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+#data-list {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+#data-list > button {
+  border: 0px;
+  background-color: $panelAccentColour;
+  width: 100%;
+  padding: 15px 15px 35px 15px;
+  margin: 0px 5px 20px 15px;
+  font-size: $subTitleFontSize;
+  text-transform: capitalize;
+  font-weight: $thinFontWeight;
+  text-align: left;
+}
+
+#data-content {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  background: $panelAccentColour;
+  color: $panelTextColour;
+  margin: 0px 20px 90px 0px;
+}
+
+#data-panel {
+  display: flex;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  flex-direction: column;
+}
+
+#data-panel > h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.dropdown-display {
+  margin-right: 0px !important;
+}
+
+.dropdown-list > div {
+  margin-right: 0px !important;
+}
+
+#data-visualizations {
+  border: 1px solid black;
+  height: 100%;
+  align-self: stretch;
+  margin-bottom: 20px;
+
+}
+
+#data-visualizations-title {
+  > h2 {
+    margin-bottom: -40px;
+  }
+
+  > p {
+    text-align: right;
+    padding-right: 10px;
+  }
+}
+
+.data-visualization-option {
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+
+  > p {
+    grid-column: 1;
+    align-items: center;
+    align-self: center;
+    padding-left: 10px;
+  }
+
+  input > {
+    grid-column: 2;
+  }
+}
+

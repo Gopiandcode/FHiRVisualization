@@ -43,7 +43,7 @@ if (process.env.NODE_ENV == 'development') {
 }
 else if (process.env.NODE_ENV == 'production') {
 
-    app.use('/static', express.static(path.join(__dirname, './frontend/dist')))
+    app.use('/static', express.static(path.join(__dirname, './frontend/dist')));
 
     app.get('/', (req, res) => {
         res.sendFile(path.join(__dirname, './frontend/dist/index.html'))
@@ -58,7 +58,6 @@ else if (process.env.NODE_ENV == 'production') {
 }
 
 
-
-app.listen(80, () => {
+app.listen(8080, () => {
     console.log("Express app listening on port " + 80);
-})
+});

@@ -1,0 +1,35 @@
+Age
+	- What age are you?
+Relationship
+Ethnic group
+
+Sex
+
+Weight
+Height
+
+Cholesterol(Total)
+Cholesterol(HDL)
+Systolic Blood pressure
+
+Alcohol Consumption
+Smoking
+
+HistoryOfHealth
+	- Diabetes
+	- Cardiac
+	- Cancer
+	...
+Medication
+	- High blood pressure
+	- High cholesterol
+	- Aspirin
+Cancer History
+Diabetes
+Heart Disease
+
+Diet - Foodgroup
+Cancer Family History
+
+Exercise daily
+Exercise stationary time

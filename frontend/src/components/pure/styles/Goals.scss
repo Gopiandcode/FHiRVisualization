@@ -1,0 +1,163 @@
+@import "variables";
+
+#goals-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 2fr 5fr;
+  grid-column-gap: 30px;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#goals-date {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  margin-right: 20px;
+}
+
+#goals-date > p {
+  float: right;
+}
+
+#goals-title > h2 {
+  margin-left: 15px;
+  font-size: $titleFontSize;
+  font-weight: $thinFontWeight;
+}
+
+#goals-title {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+#goals-options > h3 {
+  margin-left: 15px;
+  font-weight: $thinFontWeight;
+  font-size: $subTitleFontSize;
+
+}
+
+#goals-options > button {
+  border: 0px;
+  background-color: $panelAccentColour;
+  width: 100%;
+  padding: 15px 15px 35px 15px;
+  margin: 0px 5px 20px 15px;
+  font-size: $subTitleFontSize;
+  text-transform: capitalize;
+  font-weight: $thinFontWeight;
+  text-align: left;
+}
+
+#goals-new-button {
+  background-color: $headerAccentColour !important;
+  color: $headerTextColour;
+  border-radius: 50px;
+  justify-content: center;
+  text-transform: uppercase !important;
+  font-weight: $boldFontWeight;
+  display: flex;
+  padding: 10px !important;
+}
+
+#goals-date-items > p {
+  margin: 0px;
+}
+
+#goals-options {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+#goals-panel {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  background: $panelAccentColour;
+  color: $panelTextColour;
+  margin: 10px 20px 90px 0px;
+}
+
+#goals-display-panel-title {
+  display: flex;
+
+  > p {
+    font-size: $titleFontSize;
+    font-weight: $thinFontWeight;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+
+  > input {
+    //margin: 10px;
+    padding: 10px;
+  }
+}
+
+.goals-items {
+  display: none !important;
+}
+
+#goals-display-panel-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+
+  > div {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    width: 100%;
+  }
+}
+
+.goals-display-panel-label {
+  margin-left: 10px;
+  font-size: $bodyFontSize;
+}
+
+input.goals-display-panel-content {
+  padding: 10px;
+}
+
+.goals-display-panel-button {
+  background-color: $headerAccentColour !important;
+  color: $headerTextColour;
+  border-radius: 50px;
+  justify-content: center;
+  text-transform: uppercase !important;
+  font-weight: $boldFontWeight;
+  display: flex;
+  padding: 10px !important;
+  width: 100%;
+  margin-bottom: 10px;
+  border-width: 0px;
+}
+
+#goals-panel-button-container {
+  display: flex !important;
+  //justify-content: center;
+  margin-top: auto;
+  //margin-bottom: 10px;
+  //align-items: center;
+  flex-direction: column;
+  //padding-right: 10px;
+  align-self: center;
+  margin-left: 10px;
+}
+
+input.goals-display-panel-content {
+  margin: 10px 0px 10px 0px;
+}
+
+.dropdown-display {
+  margin-right: 10px;
+}
+
+.dropdown-list > div {
+  margin-right: 10px;
+}

@@ -1,0 +1,67 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+#register-parent-container {
+    display: table;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#register-container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#register-form {
+    text-align: center;
+    font-family:  $font-stack;
+    box-shadow: 1px 1px 3px #888888;
+    width: 300px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+#register-form > h2 {
+    font: 100% $font-stack;
+}
+
+
+#register-form > input {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+
+#register-form > p {
+    font-size: 0.8em;
+    color: #808080;
+}
+
+#register-form > input.register-inp {
+    border:  none;
+    background-color: #dddddd;
+    color: #808080;
+}
+
+#register-submit {
+     background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;   
+    margin-top: 20px;
+}
+
+
+#register-error {
+    color: #D8000C;
+    background-color: #FFD2D2;
+    margin: 10px 0px;
+    padding: 12px;
+    border-radius: 3px;
+}

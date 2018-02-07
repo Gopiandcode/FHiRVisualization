@@ -1,0 +1,125 @@
+@import "variables";
+
+#settings-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+#settings-date {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  margin-right: 20px;
+}
+
+#settings-date-items > p {
+  margin: 0px;
+}
+
+#settings-date > p {
+  float: right;
+}
+
+#settings-title > h2 {
+  margin-left: 15px;
+  font-size: $titleFontSize;
+  font-weight: $thinFontWeight;
+}
+
+#settings-title {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+
+}
+
+#settings-add-panel {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  background: $panelAccentColour;
+  color: $panelTextColour;
+  padding: 10px;
+  display: flex;
+  height: 190px;
+  flex-direction: column;
+
+  > h2 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    font-size: $titleFontSize;
+    font-weight: $thinFontWeight;
+  }
+
+  > form {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;;
+    padding: 10px;
+
+    .settings-inp {
+      padding: 10px;
+    }
+
+    #add-submit {
+      margin-top: 10px;
+      background-color: $headerAccentColour !important;
+      color: $headerTextColour;
+      border-radius: 50px;
+      justify-content: center;
+      text-transform: uppercase !important;
+      font-weight: $boldFontWeight;
+      display: flex;
+      padding: 10px !important;
+      border-width: 0px;
+    }
+  }
+}
+
+#settings-list-panel {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  background: $panelAccentColour;
+
+  > h2 {
+    margin-left: 20px;
+  }
+
+}
+
+#settings-company-list > div {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  margin: 20px;
+
+}
+
+#settings-company-list {
+
+  > div {
+
+    > button {
+      margin-top: 10px;
+      background-color: $headerAccentColour !important;
+      color: $headerTextColour;
+      border-radius: 50px;
+      justify-content: center;
+      text-transform: uppercase !important;
+      font-weight: $boldFontWeight;
+      display: flex;
+      padding: 10px !important;
+      border-width: 0px;
+
+    }
+  }
+}
